@@ -212,8 +212,8 @@
     <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Plugin\Changelogs\LegacyLudiqCore\Changelog_1_0_2.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Plugin\Changelogs\Changelog_1_0_0.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Dependencies\ReorderableList\SerializedPropertyAdaptor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Inspection\EditorAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Reflection\CodebaseSubset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Inspection\EditorAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Inspection\Primitives\StringInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Plugin\Changelogs\LegacyLudiqGraphs\Changelog_1_1_1.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Interface\LudiqGUI.cs" />
@@ -517,8 +517,8 @@
     <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Inspection\Other\DictionaryAssetEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Analytics\HotkeyUsageAnalytics.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Context\GraphContextAttribute.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Inspection\Special\UnknownInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Platforms\MethodInfoStubWriter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Inspection\Special\UnknownInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Dependencies\ReorderableList\ReorderableListEvents.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Inspection\MetadataCollectionAdaptor.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Analysis\AnalyserProvider.cs" />

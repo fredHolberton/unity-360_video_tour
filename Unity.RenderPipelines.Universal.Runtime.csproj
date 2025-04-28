@@ -111,8 +111,8 @@
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal\Runtime\RendererFeatures\ScreenSpaceAmbientOcclusion.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal\Runtime\History\TaaHistory.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal\Runtime\FrameData\UniversalPostProcessingData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal\Runtime\Overrides\Bloom.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal\Runtime\FrameData\UniversalShadowData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal\Runtime\Overrides\Bloom.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal\Runtime\Debug\DebugDisplaySettingsRendering.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal\Runtime\SupportedOnRenderer.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal\Runtime\UniversalRenderer.cs" />
