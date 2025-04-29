@@ -1,8 +1,10 @@
+using System.Data.Common;
 using UnityEngine;
 using UnityEngine.Video;
 
 public class HotspotController : MonoBehaviour
 {
+    
     /// <summary>
     /// Video Player for playing LivingRoom video
     /// </summary>
@@ -23,16 +25,35 @@ public class HotspotController : MonoBehaviour
     /// </summary>
     public VideoPlayer mezzanineVideoPlayer;
 
+    /// <summary>
+    /// group of Hotspots in the Living room
+    /// </summary>
     public GameObject livingRoomGroup;
+    
+    /// <summary>
+    /// group of Hotspots in the Cantina
+    /// </summary>
     public GameObject cantinaGroup;
+    
+    /// <summary>
+    /// group of Hotspots in the Cube
+    /// </summary>
     public GameObject cubeGroup;
+    
+    /// <summary>
+    /// group of Hotspots in the Mezzanine
+    /// </summary>
     public GameObject mezzanineGroup;
+
+    private Animator transition;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        transition = GetComponent<Animator>();
+
         // Enable the LivingRoom video and desable other
-        ActivateLivingRoomVP();
+        ActivateLivingRoomVP(false);
     }
 
     // Update is called once per frame
@@ -41,33 +62,25 @@ public class HotspotController : MonoBehaviour
         
     }
 
-    public void ActivateLivingRoomVP()
+    public void ActivateLivingRoomVP(bool trans = true)
     {
+        if (trans) transition.SetTrigger("MakeTransition");
+
         livingRoomVideoPlayer.enabled = true;
         cantinaVideoPlayer.enabled = false;
         cubeVideoPlayer.enabled = false;
         mezzanineVideoPlayer.enabled = false;
 
-        if (!livingRoomGroup.activeSelf)
-        {
-            livingRoomGroup.SetActive(true);
-        }
-        if (cantinaGroup.activeSelf) 
-        {
-            cantinaGroup.SetActive(false);
-        }
-        if (cubeGroup.activeSelf) 
-        {
-            cubeGroup.SetActive(false);
-        }
-        if (mezzanineGroup.activeSelf) 
-        {
-            mezzanineGroup.SetActive(false);
-        }
+        if (!livingRoomGroup.activeSelf) livingRoomGroup.SetActive(true);
+        if (cantinaGroup.activeSelf) cantinaGroup.SetActive(false);
+        if (cubeGroup.activeSelf) cubeGroup.SetActive(false);
+        if (mezzanineGroup.activeSelf) mezzanineGroup.SetActive(false);
     }
 
     public void ActivateCantinaVP()
     {
+        transition.SetTrigger("MakeTransition");
+
         livingRoomVideoPlayer.enabled = false;
         cantinaVideoPlayer.enabled = true;
         cubeVideoPlayer.enabled = false;
@@ -81,6 +94,8 @@ public class HotspotController : MonoBehaviour
 
     public void ActivateCubeVP()
     {
+        transition.SetTrigger("MakeTransition");
+
         livingRoomVideoPlayer.enabled = false;
         cantinaVideoPlayer.enabled = false;
         cubeVideoPlayer.enabled = true;
@@ -94,6 +109,8 @@ public class HotspotController : MonoBehaviour
 
     public void ActivateMezzanineVP()
     {
+        transition.SetTrigger("MakeTransition");
+        
         livingRoomVideoPlayer.enabled = false;
         cantinaVideoPlayer.enabled = false;
         cubeVideoPlayer.enabled = false;
