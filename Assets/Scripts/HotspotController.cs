@@ -66,6 +66,10 @@ public class HotspotController : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// Activate Livingroom video and desactivate other
+    /// </summary>
+    /// <param name="trans"></param>
     public void ActivateLivingRoomVP(bool trans = true)
     {
         if (trans) transition.SetTrigger("MakeTransition");
@@ -82,6 +86,9 @@ public class HotspotController : MonoBehaviour
         if (informationGO.activeSelf) informationGO.SetActive(false);
     }
 
+    /// <summary>
+    /// Activate Cantina video and desactivate other
+    /// </summary>
     public void ActivateCantinaVP()
     {
         transition.SetTrigger("MakeTransition");
@@ -98,6 +105,9 @@ public class HotspotController : MonoBehaviour
         if (informationGO.activeSelf) informationGO.SetActive(false);
     }
 
+    /// <summary>
+    /// Activate Cube video and desactivate other
+    /// </summary>
     public void ActivateCubeVP()
     {
         transition.SetTrigger("MakeTransition");
@@ -114,6 +124,9 @@ public class HotspotController : MonoBehaviour
         if (informationGO.activeSelf) informationGO.SetActive(false);
     }
 
+    /// <summary>
+    /// Activate Mezzanine video and desactivate other
+    /// </summary>
     public void ActivateMezzanineVP()
     {
         transition.SetTrigger("MakeTransition");

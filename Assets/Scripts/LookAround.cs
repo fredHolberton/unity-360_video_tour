@@ -13,6 +13,9 @@ public class LookAround : MonoBehaviour
     public GameObject imageBackground;
 
 
+    /// <summary>
+    /// Image to have a background color for information text
+    /// </summary>
     public GameObject informationImage;
 
     // Update is called once per frame
