@@ -45,11 +45,15 @@ public class HotspotController : MonoBehaviour
     /// </summary>
     public GameObject mezzanineGroup;
 
+    public GameObject informationGO;
+
+    /* Animator for transition between two rooms */ 
     private Animator transition;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //Init of GameObjects in the scene
         transition = GetComponent<Animator>();
 
         // Enable the LivingRoom video and desable other
@@ -75,6 +79,7 @@ public class HotspotController : MonoBehaviour
         if (cantinaGroup.activeSelf) cantinaGroup.SetActive(false);
         if (cubeGroup.activeSelf) cubeGroup.SetActive(false);
         if (mezzanineGroup.activeSelf) mezzanineGroup.SetActive(false);
+        if (informationGO.activeSelf) informationGO.SetActive(false);
     }
 
     public void ActivateCantinaVP()
@@ -90,6 +95,7 @@ public class HotspotController : MonoBehaviour
         if (!cantinaGroup.activeSelf) cantinaGroup.SetActive(true);
         if (cubeGroup.activeSelf) cubeGroup.SetActive(false);
         if (mezzanineGroup.activeSelf) mezzanineGroup.SetActive(false);
+        if (informationGO.activeSelf) informationGO.SetActive(false);
     }
 
     public void ActivateCubeVP()
@@ -105,6 +111,7 @@ public class HotspotController : MonoBehaviour
         if (cantinaGroup.activeSelf) cantinaGroup.SetActive(false);
         if (!cubeGroup.activeSelf) cubeGroup.SetActive(true);
         if (mezzanineGroup.activeSelf) mezzanineGroup.SetActive(false);
+        if (informationGO.activeSelf) informationGO.SetActive(false);
     }
 
     public void ActivateMezzanineVP()
@@ -120,6 +127,7 @@ public class HotspotController : MonoBehaviour
         if (cantinaGroup.activeSelf) cantinaGroup.SetActive(false);
         if (cubeGroup.activeSelf) cubeGroup.SetActive(false);
         if (!mezzanineGroup.activeSelf) mezzanineGroup.SetActive(true);
+        if (informationGO.activeSelf) informationGO.SetActive(false);
     }
 
 

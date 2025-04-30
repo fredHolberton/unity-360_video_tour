@@ -12,6 +12,9 @@ public class LookAround : MonoBehaviour
     /// </summary>
     public GameObject imageBackground;
 
+
+    public GameObject informationImage;
+
     // Update is called once per frame
     void Update()
     {
@@ -21,9 +24,13 @@ public class LookAround : MonoBehaviour
             transform.RotateAround(transform.position, -Vector3.up, speed * Input.GetAxis("Mouse X"));
             transform.RotateAround(transform.position, transform.right, speed * Input.GetAxis("Mouse Y"));
 
-            // Image movement for beeing always in front of the camera
+            // transition Image movement for beeing always in front of the camera
             imageBackground.transform.RotateAround(transform.position, -Vector3.up, speed * Input.GetAxis("Mouse X"));
             imageBackground.transform.RotateAround(transform.position, transform.right, speed * Input.GetAxis("Mouse Y"));
+
+            // Information image movement for beeing always in front of the camera
+            informationImage.transform.RotateAround(transform.position, -Vector3.up, speed * Input.GetAxis("Mouse X"));
+            informationImage.transform.RotateAround(transform.position, transform.right, speed * Input.GetAxis("Mouse Y"));
         }
     }
 }
