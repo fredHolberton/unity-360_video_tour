@@ -45,8 +45,6 @@ public class HotspotController : MonoBehaviour
     /// </summary>
     public GameObject mezzanineGroup;
 
-    public GameObject informationGO;
-
     /* Animator for transition between two rooms */ 
     private Animator transition;
 
@@ -83,7 +81,6 @@ public class HotspotController : MonoBehaviour
         if (cantinaGroup.activeSelf) cantinaGroup.SetActive(false);
         if (cubeGroup.activeSelf) cubeGroup.SetActive(false);
         if (mezzanineGroup.activeSelf) mezzanineGroup.SetActive(false);
-        if (informationGO.activeSelf) informationGO.SetActive(false);
     }
 
     /// <summary>
@@ -102,7 +99,6 @@ public class HotspotController : MonoBehaviour
         if (!cantinaGroup.activeSelf) cantinaGroup.SetActive(true);
         if (cubeGroup.activeSelf) cubeGroup.SetActive(false);
         if (mezzanineGroup.activeSelf) mezzanineGroup.SetActive(false);
-        if (informationGO.activeSelf) informationGO.SetActive(false);
     }
 
     /// <summary>
@@ -121,7 +117,6 @@ public class HotspotController : MonoBehaviour
         if (cantinaGroup.activeSelf) cantinaGroup.SetActive(false);
         if (!cubeGroup.activeSelf) cubeGroup.SetActive(true);
         if (mezzanineGroup.activeSelf) mezzanineGroup.SetActive(false);
-        if (informationGO.activeSelf) informationGO.SetActive(false);
     }
 
     /// <summary>
@@ -140,7 +135,6 @@ public class HotspotController : MonoBehaviour
         if (cantinaGroup.activeSelf) cantinaGroup.SetActive(false);
         if (cubeGroup.activeSelf) cubeGroup.SetActive(false);
         if (!mezzanineGroup.activeSelf) mezzanineGroup.SetActive(true);
-        if (informationGO.activeSelf) informationGO.SetActive(false);
     }
 
 
